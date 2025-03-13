@@ -1,0 +1,40 @@
+html{
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+#container{
+    display: flex;
+    flex-direction: column;
+}
+#header{
+    margin: 1Opx;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(229, 239, 248);
+    
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+}
+img{
+    margin: 10px;
+    height:200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.title{
+    display: flex;
+    align-items: center;
+    color: rgb(0, 11, 112);
+    font-size: 50px;
+    font-weight: 900;
+}
+.lines{
+    border: 1px solid rgb(0, 11, 112); 
+    flex: 1;
+    
+}
+#container2{
+    display: flex;
+    gap: 20px;
+}

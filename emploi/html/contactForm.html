@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+        }
+        form{
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        input , textarea{
+            width: 60%;
+            
+        }
+        textarea{
+            height: 100px;
+        }
+        #container2{
+            text-align: center;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="container2">
+        <div id="container3">
+            <img src="logoEnsakh.png" alt="logo" width="150px" >
+        </div>
+        <div id="container4">
+            <p>Universite Sultan Moulay Slimane</p>
+            <p>Ecole Nationale des Siences Appliquees de Khouribga </p>
+            <p>Annee Universitaire 2024-2025</p>
+         </div>
+            <img src="USMS.jpeg" alt="USMS LOGO" width="150px" height="100px">
+        
+        </div>
+
+    <form action="">
+        <label for="fname"> Prenom:</label>
+        <input type="text" id="fname" name="fname">
+        <label for="lname"> Nom:</label>
+        <input type="text" id="lname" name="lname">
+        <label for="msg"> Message:</label>
+        <textarea name="msg" id="msg"></textarea>
+        <div style="display: flex; gap: 10px;">
+        <input type="submit">
+        <input type="reset">
+        </div>
+    </form>
+    </div>
+</body>
+</html>
