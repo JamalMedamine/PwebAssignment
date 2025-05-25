@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Quiz Interactive</h1>
+    <button>lancer Quiz</button>
+
+    <script>
+        const questions = [
+            ["Quel est le langage de programmation utilisé pour créer des pages web dynamiques ?","javascript"],
+            ["Quel est le langage de balisage utilisé pour structurer le contenu d'une page web ?","html"],
+            ["Quel est le langage de style utilisé pour mettre en forme les pages web ?","css"],
+            ["Quel est le framework JavaScript populaire pour créer des interfaces utilisateur ?","react"],
+            ["Quel est le protocole utilisé pour transférer des données sur le web ?","http"]
+    ]
+    let score =0;
+        const button = document.querySelector("button");
+        button.addEventListener("click", () => {
+            for (let i = 0; i < questions.length; i++) {
+                const userAnswer = prompt(questions[i][0]);
+                if (userAnswer.toLowerCase() === questions[i][1]) {
+                    alert("Correct!");
+                    score++;
+                } else {
+                    alert("Incorrect! La bonne réponse est: " + questions[i][1]);
+                }
+            }
+            alert("Votre score final est: " + score + "/" + questions.length);
+        });
+
+    </script>
+</body>
+</html>

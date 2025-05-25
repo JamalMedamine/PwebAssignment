@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const randomNumber = Math.floor(Math.random() * 10) + 1;
+        let guess ,
+            attempts = 0;
+        while(guess!=randomNumber){
+            guess = prompt("Guess a number between 1 and 10:");
+            if(typeof guess !== 'string' || isNaN(guess) || guess < 1 || guess > 10) {
+                alert("Please enter a valid number between 1 and 10.");
+            } else {
+                attempts++;
+                guess = parseInt(guess);
+                if (guess < randomNumber) {
+                    alert("Too low! Try again.");
+                } else if (guess > randomNumber) {
+                    alert("Too high! Try again.");
+                } else {
+                    alert("Congratulations! You guessed the number: " + randomNumber +"with " + attempts + " attempts.");
+                }
+            }
+        }
+    </script>
+</body>
+</html>
